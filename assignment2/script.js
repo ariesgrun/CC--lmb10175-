@@ -28,13 +28,13 @@ function pickQuote() {
 }
 
 function draw() {
-  background(255, 20, 250);
+  background("#163E13");
   drawQuote(); // draw the quote on screen
 }
 
 function drawQuote() {
   // draw text
-  fill(10, 255, 10);
+  fill("#FFFFFF");
   textAlign(CENTER, CENTER);
   text("Creative Coding is.....", width / 2, height / 2 - 48);
   textSize(32);
