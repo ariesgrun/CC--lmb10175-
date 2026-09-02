@@ -24,7 +24,7 @@ function setup() {
 
 function pickQuote() {
   // take a random number and use that to identify what quote to use
-  current = quotes[floor(quotes.length)]; 
+  current = quotes[floor(random(quotes.length))]; 
 }
 
 function draw() {
