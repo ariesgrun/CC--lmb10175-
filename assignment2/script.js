@@ -55,4 +55,6 @@ function newQuote() {
 
 function mousePressed() {
   newQuote(); 
+  
+
 }
