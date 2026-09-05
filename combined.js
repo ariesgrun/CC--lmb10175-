@@ -61,6 +61,16 @@ function draw() {
   let RightPupilY = 50 + sin(rightAngle) * 12; 
   fill(0); //black
   ellipse(RightPupilX, RightPupilY, 25, 25);
+
+
+
+
+
+
+
+
+
+  ///////////////BACKGROUND
   pop();
 
       for (let i = 0; i < width; i += 150) {
