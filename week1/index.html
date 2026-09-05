@@ -19,21 +19,36 @@
       font-family: sans-serif;
       position: relative;
       z-index: 1;
-      padding: 150px 40px 40px 40px;
+
       }
 
 
-#top {
-  position: fixed;
+#topMiddle {
+  background: #1f3519;
   top: 0;
-
-  z-index: 1;
+  left: 0;
+  width: 200px;
   text-align: center;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+
+#topLeft{
   background: #1f3519;
   width: 200px;
-  margin: 150px auto 0;
+  position: fixed;
+  top: 0;
+  left: 10px;
+  z-index: 2;
+  text-align: center;
   border-radius: 15px;
-
+  margin-top: 10px;
 }
 
   canvas {
@@ -48,9 +63,13 @@
 
 
   <body>
-    <div id="top">
-    <h1> <a href="https://annalucia.io/selected.html">Anna Lucia</a></h1>
-    
+    <div id="topLeft">
+      <h1> <a href="../index.html"</a>Home</h1>
+    </div>
+
+
+    <div id="topMiddle">
+      <h1> <a href="https://annalucia.io/selected.html">Anna Lucia</a></h1>
     </div>
 
     
