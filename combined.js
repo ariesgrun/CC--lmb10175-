@@ -1,7 +1,6 @@
 function setup() {
-canvas = createCanvas(windowWidth, 75);
+    createCanvas(windowWidth, wind);
 
-  
 }
 
 //making eyes that track mouse
