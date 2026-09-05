@@ -1,6 +1,6 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(0)
+
 
 
 }
@@ -26,7 +26,7 @@ function draw() {
   //left pupil direction
   push(); 
   let LeftPupilX = windowWidth*0.4 + cos(leftAngle) * 15; //determines if x pos is - or + from center
-  let LeftPupilY = 50 + sin(leftAngle) * 15; //determines if y pos is - or +
+  let LeftPupilY = 50 + sin(leftAngle) * 12; //determines if y pos is - or +
   fill(0); //black
   ellipse(LeftPupilX, LeftPupilY, 25, 25);
   pop();
@@ -34,19 +34,9 @@ function draw() {
   //right pupil direction
   push(); 
   let RightPupilX = windowWidth*0.6 + cos(rightAngle) * 15; 
-  let RightPupilY = 50 + sin(rightAngle) * 15; 
+  let RightPupilY = 50 + sin(rightAngle) * 12; 
   fill(0); //black
-  ellipse(RightPupilX, LeftPupilY, 25, 25);
+  ellipse(RightPupilX, RightPupilY, 25, 25);
   pop();
-//////////////////////////////////////////////////////////////////
-
-//background
-
-
-
-
-
-
-
 
 }
