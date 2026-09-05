@@ -25,6 +25,8 @@ function setup() {
   }
 
 }
+//TESTING BELOW
+
 
 // function draw() {
   // for (let i = 0; i < width; i += 100) {

@@ -1,3 +1,6 @@
+
+//background reference : https://editor.p5js.org/joshgiesbrecht/sketches/iUPHX1UQz
+
 function setup() {
     createCanvas(windowWidth, windowHeight);
     angleMode(DEGREES)
@@ -84,7 +87,7 @@ function draw() {
 
 
 }
-
+//reference https://editor.p5js.org/bad/sketches/1pQuWa8bj
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
