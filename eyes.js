@@ -1,0 +1,52 @@
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  background(0)
+
+
+}
+
+//making eyes that track mouse
+//reference https://p5js.org/examples/Angles-And-Motion-Aim & THE UNIT CIRCLE
+//push/pop = contains objects as independent groups
+
+
+function draw() {
+
+  //eyes with pup
+
+  ellipse(windowWidth*0.4, 50, 70, 50); // left eye
+  ellipse(windowWidth*0.6, 50, 70, 50); // right eye
+  // ellipse(windowWidth*0.4, 50, 25, 25); // reference for left pupil origin
+  // ellipse(windowWidth*0.6, 50, 25, 25); // reference right pupil origin
+//////////////////////////////////////////////////////////////////
+
+  let leftAngle = atan2(mouseY - 50, mouseX - windowWidth*0.4); //from referenced link
+  let rightAngle = atan2(mouseY - 50, mouseX - windowWidth*0.6); //from referenced link
+
+  //left pupil direction
+  push(); 
+  let LeftPupilX = windowWidth*0.4 + cos(leftAngle) * 15; //determines if x pos is - or + from center
+  let LeftPupilY = 50 + sin(leftAngle) * 15; //determines if y pos is - or +
+  fill(0); //black
+  ellipse(LeftPupilX, LeftPupilY, 25, 25);
+  pop();
+
+  //right pupil direction
+  push(); 
+  let RightPupilX = windowWidth*0.6 + cos(rightAngle) * 15; 
+  let RightPupilY = 50 + sin(rightAngle) * 15; 
+  fill(0); //black
+  ellipse(RightPupilX, LeftPupilY, 25, 25);
+  pop();
+//////////////////////////////////////////////////////////////////
+
+//background
+
+
+
+
+
+
+
+
+}
