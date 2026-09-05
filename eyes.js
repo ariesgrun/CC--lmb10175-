@@ -1,7 +1,6 @@
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-
-
+  let canvas = createCanvas(windowWidth, 75);
+  canvas.parent("eye-container");
 
 }
 
